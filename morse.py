@@ -201,8 +201,9 @@ if (__name__ == "__main__"):
 		MorseDict[str(LetterToMorse[morseIndex+1])] = LetterToMorse[morseIndex]
 	MorseDict[""] = " "
 
-	#load up the left and right channels
-	wavLoad("alphabetmorse.wav")
+	#prompt user for file and load up the left and right channels
+	wavFile = raw_input('enter wav file => ')
+	wavLoad(wavFile)
 
 	#take morse code data and load it up
 	rawMorseCodeData = CreateMorseList(leftChannel)

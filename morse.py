@@ -6,10 +6,11 @@ import struct
 
 leftChannel = array (list())
 rightChannel = array (list())
-resonantConst = 183
+resonantConst = 182
 formatDict = dict()
 startofFileIndex = 0
 
+#  hi
 #
 #  attributes of wav files:
 #  max bit amplitude:		32767
